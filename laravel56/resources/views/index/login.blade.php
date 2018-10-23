@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<form action="{{url('index/landingOperation')}}"  method="post" class="form center">
-						
+
 					{{ csrf_field() }}
 					<meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -29,7 +29,7 @@
 			<div class="login_center">
 				<div class="login_top">
 					<div class="left fl">会员登录</div>
-					<div class="right fr">您还不是我们的会员？<a href="{{url('index/register')}}" target="_self">立即注册</a></div>
+					<div class="right fr">您还不是我们的会员？<a href="{{url('index/register')}}" target="_self">立即注册</a>|<a href="{{url('FrontDesk/log/login')}}" target="_self">进入后台</a></div>
 					<div class="clear"></div>
 					<div class="xian center"></div>
 				</div>
